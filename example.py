@@ -103,7 +103,7 @@ class Augumentor():
 if __name__ == "__main__":
     if not os.path.exists(config.augmented_images):
         os.makedirs(config.augmented_images)
-    if not os.path.exists(config.augmented_csv_file):
+    if not os.path.exists(config.augmented_csv_path):
         os.makedirs(config.augmented_csv_path)        
     detection_augumentor = Augumentor()
     detection_augumentor.fit()
